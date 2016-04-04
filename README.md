@@ -1,24 +1,45 @@
-## README
+#Rails API Example Application - Elexion(2016)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby version: 2.3.0
+* Rails version: 5.0.0 beta 3
+* Database:  Postgres
+* Test suite:  RSpec
 
-Things you may want to cover:
+*See the Gemfile for more information*
 
-* Ruby version
+### NOTE: This application is still a work in progress.
 
-* System dependencies
+##Getting Started
+Clone the application:
+```
+clone https://github.com/hogihung/elexion_2016.git
+cd elexion_2016
+```
 
-* Configuration
 
-* Database creation
+Prepare your database:
+```
+rails db:create
+rails db:migrate
+```
 
-* Database initialization
+## Prime Development Data
+To ensure we have consistent data when we are testing, use the following command to reset your dev database:
 
-* How to run the test suite
+```
+rails dev:prime
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+## Run the tests
+You can run the test suite, which is RSpec based, by executing the following command:
 
-* Deployment instructions
+```
+rspec
+``` 
 
-* ...
+## Start Web Server - Development environment
+```
+rails server
+```
+
+
