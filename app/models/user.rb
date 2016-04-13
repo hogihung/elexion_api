@@ -6,7 +6,7 @@ class User < ApplicationRecord
   validates :status, presence: true, inclusion: { in: :acceptable_status }
 
   def as_json(options={})
-    super(:only => [:first_name, :last_name, :delegate_count, :popular_vote_count])
+    super(:only => [:id, :name, :role])
   end
 
   private

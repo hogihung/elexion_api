@@ -12,7 +12,7 @@ class Candidate < ApplicationRecord
   end
 
   def as_json(options={})
-    super(:only => [:first_name, :last_name, :delegate_count, :popular_vote_count])
+    super(:only => [:id, :first_name, :last_name, :party, :delegate_count, :popular_vote_count])
   end
 
   private
