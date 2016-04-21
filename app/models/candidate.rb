@@ -11,10 +11,6 @@ class Candidate < ApplicationRecord
     "#{first_name} #{last_name}"
   end
 
-  def as_json(options={})
-    super(:only => [:id, :first_name, :last_name, :party, :delegate_count, :popular_vote_count])
-  end
-
   private
 
   def acceptable_party
