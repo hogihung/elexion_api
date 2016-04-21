@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+donald:
+  first_name: Donald
+  last_name: Trump
+  party: Republican
+  delegate_count: 736
+  popular_vote_count: 7811245
+  status: active
+
+rubio:
+  first_name: Marco
+  last_name: Rubio
+  party: Republican
+  delegate_count: 171
+  popular_vote_count: 3435009
+  status: suspended
+
+hillary:
+  first_name: Hillary
+  last_name: Clinton
+  party: Democrat
+  delegate_count: 1712
+  popular_vote_count: 8924821
+  status: active
+
+chafee:
+  first_name: Lincoln
+  last_name: Chafee
+  party: Democrat
+  delegate_count: 0
+  popular_vote_count: 0
+  status: dropped-out
