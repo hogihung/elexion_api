@@ -1,4 +1,5 @@
 class CandidatesController < ApplicationController
+  include ActionController::Serialization
 
   def index
     @candidates = Candidate.all

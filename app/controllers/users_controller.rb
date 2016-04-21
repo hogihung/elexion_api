@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  include ActionController::Serialization
 
   def index
     @users = User.all
